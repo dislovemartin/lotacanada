@@ -5,3 +5,10 @@
 /.next/
 .env*.local
 .vercel
+
+# Large video files
+Raw videos/*.MOV
+Raw videos/*.mp4
+Raw videos/*.avi
+Raw videos/*.mkv
+Raw videos/*.mov
