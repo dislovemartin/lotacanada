@@ -1,0 +1,7 @@
+# Private individual user cursor rules
+.cursor/rules/_*.mdc
+# dependencies
+/node_modules
+/.next/
+.env*.local
+.vercel
