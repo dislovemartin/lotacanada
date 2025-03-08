@@ -2,9 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
@@ -49,31 +51,15 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Custom colors for Aesop-inspired design
-        sand: {
-          light: "#f5f5f0",
-          DEFAULT: "#e6e2d9",
-          dark: "#d6d1c4",
-        },
-        earth: {
-          light: "#c4bfb2",
-          DEFAULT: "#a39e8c",
-          dark: "#827d6d",
-        },
-        stone: {
-          light: "#5c5a54",
-          DEFAULT: "#3c3a36",
-          dark: "#28262f",
-        },
+      },
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"],
+        serif: ["Georgia", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ['var(--font-sans)'],
-        serif: ['var(--font-serif)'],
       },
       keyframes: {
         "accordion-down": {
@@ -93,3 +79,4 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 }
+

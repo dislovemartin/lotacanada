@@ -1,8 +1,2 @@
-/node_modules
-/build
-/temp
-.DS_STORE
-.gitignore
-/xnotes
 # Project notes and templates
 xnotes/
